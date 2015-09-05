@@ -1,3 +1,95 @@
 * {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
 
+body {
+  background-color: #3a4359;
+  color: #111;
+  font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  word-wrap: break-word;
+}
+
+html, body, div, dl, dt, dd, h1, h2, h3, h4, h5, h6, ul, ol, li, pre, form, fieldset, input, p, blockquote, table, th, td, footer, header, article, section, main, nav {
+  margin: 0;
+  padding: 0;
+}
+
+audio, video, applet, object, embed, iframe, img {
+  height: auto;
+  max-width: 100%;
+}
+
+h1, h2, h3, h4 {
+  line-height: 2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  border: 0;
+  height: auto;
+  max-width: 100%;
+}
+
+a {
+  color: #003399;
+  text-decoration: none;
+}
+
+.page {
+  background: #fff;
+  margin: 0 auto;
+  max-width: 62rem;
+  overflow: auto;
+}
+
+.page > header, .page > footer, main, .nav-site {
+  background: #ffddcc;
+  float: left;
+  padding: 1rem;
+  width: 100%;
+}
+
+
+@media screen and (min-width: 721px) {
+
+  main {
+    background: #ffeedd;
+    float: right;
+    padding: 0 1rem;
+    width: 80%; /* For browsers that can't handle calc(). */
+    width: calc(100% - 12rem);
+  }
+
+  .nav-site {
+    background: #ddeeff;
+    clear: left;
+    float: left;
+    padding: 0 1rem;
+    width: 80%; /* For browsers that can't handle calc(). */
+    width: calc(12rem);
+
+    .nav-trigger {
+      display: none;
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 720px) {
+
+  .nav-site {
+
+    .nav-links {
+      display: none;
+    }
+  }
 }
