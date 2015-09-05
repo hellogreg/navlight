@@ -63,7 +63,7 @@ a {
     padding: 0 1rem;
     width: 80%;
     /* For browsers that can't handle calc(). */
-    width: calc(12rem); }
+    width: calc(0% + 12rem); }
     .nav-site .nav-trigger {
       display: none; } }
 @media screen and (max-width: 720px) {
