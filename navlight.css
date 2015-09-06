@@ -115,14 +115,11 @@ main {
         display: inline; }
         .nav-site .nav-links li a {
           background: #ddeeff;
-          border-bottom: 1px solid #fff;
           color: inherit;
           display: block;
           float: left;
           padding: 0 .5rem;
           width: 50%; }
-          .nav-site .nav-links li a:nth-child(odd) {
-            border-right: 1px solid #fff; }
           .nav-site .nav-links li a:hover {
             background: #ccddee; } }
 
