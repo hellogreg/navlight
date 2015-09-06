@@ -116,7 +116,7 @@ main {
           color: inherit;
           display: block;
           float: left;
-          padding: 0 1rem;
+          padding: 0 .5rem;
           width: 50%; }
           .nav-site .nav-links li a:nth-child(odd) {
             border-right: 1px solid #fff; }
