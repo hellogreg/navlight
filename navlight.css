@@ -85,8 +85,11 @@ main {
           .nav-site .nav-links li a:hover {
             background: #ccddee; } }
 @media screen and (max-width: 720px) {
+  .pagehead, .pagefoot, .nav-triggers {
+    padding: .5rem; }
+
   .pagehead {
-    height: 4rem;
+    height: 3rem;
     width: calc(100% - 5rem); }
 
   .nav-site {
@@ -95,7 +98,7 @@ main {
       background: #99ff99;
       font-weight: 700;
       line-height: 2rem;
-      height: 4rem;
+      height: 3rem;
       left: calc(100% - 5rem);
       position: absolute;
       text-align: center;
