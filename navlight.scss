@@ -65,10 +65,6 @@ main {
   background: #fff;
 }
 
-.invisible {
-  display: none;
-}
-
 @media screen and (min-width: 721px) {
 
   main {
@@ -117,6 +113,10 @@ main {
 }
 
 @media screen and (max-width: 720px) {
+
+  .invisible {
+    display: none;
+  }
 
   .pagehead, .pagefoot, .nav-triggers, main {
     padding: .5rem;
