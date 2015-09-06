@@ -87,18 +87,18 @@ main {
 @media screen and (max-width: 720px) {
   .pagehead {
     height: 4rem;
-    width: calc(100% - 8rem); }
+    width: calc(100% - 5rem); }
 
   .nav-site {
     padding: 0; }
     .nav-site .nav-triggers {
       background: #99ff99;
       height: 4rem;
-      left: calc(100% - 8rem);
+      left: calc(100% - 5rem);
       position: absolute;
       text-align: center;
       top: 0;
-      width: 8rem; }
+      width: 5rem; }
     .nav-site .nav-links {
       font-size: .75rem;
       line-height: 1.5rem;
