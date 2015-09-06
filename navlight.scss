@@ -116,7 +116,7 @@ main {
 
   .pagehead {
     height: 4rem;
-    width: calc(100% - 10rem);
+    width: calc(100% - 8rem);
   }
 
   .nav-site {
@@ -126,11 +126,11 @@ main {
     .nav-triggers {
       background: #99ff99;
       height: 4rem;
-      left: calc(100% - 10rem);
+      left: calc(100% - 8rem);
       position: absolute;
       text-align: center;
       top: 0;
-      width: 10rem;
+      width: 8rem;
     }
 
     .nav-links {
