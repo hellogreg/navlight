@@ -120,6 +120,9 @@ main {
           float: left;
           padding: 0 .5rem;
           width: 50%; }
+          .nav-site .nav-links li a:before {
+            content: '\ffed';
+            margin-right: 0.5em; }
           .nav-site .nav-links li a:hover {
             background: #ccddee; } }
 

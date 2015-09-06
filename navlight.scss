@@ -161,6 +161,11 @@ main {
           padding: 0 .5rem;
           width: 50%;
 
+          &:before {
+            content: '\ffed';
+            margin-right: 0.5em;
+          }
+
           &:nth-child(odd) {
             //border-right: 1px solid #fff;
           }
