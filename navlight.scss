@@ -5,9 +5,9 @@
 }
 
 body {
-  background-color: #3a4359;
+  background-color: #fff;
   color: #111;
-  font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
+  font-family: sans-serif;
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.25rem;
@@ -51,18 +51,9 @@ a {
 }
 
 .pagehead, .pagefoot, main, .nav-site {
-  background: #ffddcc;
   float: left;
   padding: 1rem;
   width: 100%;
-}
-
-main {
-  background: #ffeedd;
-}
-
-.nav-site {
-  background: #fff;
 }
 
 @media screen and (min-width: 721px) {
@@ -97,13 +88,13 @@ main {
         }
 
         a {
-          background: #ddeeff;
+          background: #ddd;
           color: inherit;
           display: block;
           padding-left: .25rem;
 
           &:hover {
-            background: #ccddee;
+            background: #bbb;
           }
         }
       }
@@ -118,13 +109,17 @@ main {
     display: none;
   }
 
-  .pagehead, .pagefoot, .nav-triggers, main {
+  .pagehead, .pagefoot, .nav-triggers {
     padding: .5rem;
   }
 
   .pagehead {
     height: 3rem;
-    width: calc(100% - 5rem);
+    width: calc(100% - 6rem);
+  }
+
+  main {
+    padding: 1rem .5rem;
   }
 
   .nav-site {
@@ -132,15 +127,31 @@ main {
     padding: 0;
 
     .nav-triggers {
-      background: #ddeeff;
+      background: #444;
       font-weight: 700;
       line-height: 2rem;
       height: 3rem;
-      left: calc(100% - 5rem);
+      left: calc(100% - 6rem);
       position: absolute;
-      text-align: center;
       top: 0;
-      width: 5rem;
+      width: 6rem;
+
+      li a {
+        color: #fff;
+        padding-left: .875rem;
+
+        &::after {
+          content: '▾';
+          display: inline-block;
+          margin-left: .5rem;
+        }
+
+        &.open::after {
+          content: '×';
+          display: inline-block;
+        }
+
+      }
     }
 
     // Hide .nav-links with left: -99rem and position: absolute rather than display: none, so screen readers
@@ -161,29 +172,23 @@ main {
         display: inline;
 
         a {
-          background: #ddeeff;
-          //border-bottom: 1px solid #fff;
-          color: inherit;
+          background: #444;
+          color: #fff;
           display: block;
           float: left;
           padding: 0 .5rem;
           width: 50%;
 
-          &:before {
+          &::before {
             content: '›';
             margin-right: 0.5em;
           }
 
-          &:nth-child(odd) {
-            //border-right: 1px solid #fff;
-          }
-
           &:hover {
-            background: #ccddee;
+            background: #777;
           }
         }
       }
-
     }
   }
 }

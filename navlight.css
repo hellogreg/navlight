@@ -5,9 +5,9 @@
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  background-color: #3a4359;
+  background-color: #fff;
   color: #111;
-  font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
+  font-family: sans-serif;
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.25rem;
@@ -43,16 +43,9 @@ a {
   overflow: auto; }
 
 .pagehead, .pagefoot, main, .nav-site {
-  background: #ffddcc;
   float: left;
   padding: 1rem;
   width: 100%; }
-
-main {
-  background: #ffeedd; }
-
-.nav-site {
-  background: #fff; }
 
 @media screen and (min-width: 721px) {
   main {
@@ -79,35 +72,47 @@ main {
         .nav-site .nav-links li:last-child {
           border-bottom-width: 0; }
         .nav-site .nav-links li a {
-          background: #ddeeff;
+          background: #ddd;
           color: inherit;
           display: block;
           padding-left: .25rem; }
           .nav-site .nav-links li a:hover {
-            background: #ccddee; } }
+            background: #bbb; } }
 @media screen and (max-width: 720px) {
   .invisible {
     display: none; }
 
-  .pagehead, .pagefoot, .nav-triggers, main {
+  .pagehead, .pagefoot, .nav-triggers {
     padding: .5rem; }
 
   .pagehead {
     height: 3rem;
-    width: calc(100% - 5rem); }
+    width: calc(100% - 6rem); }
+
+  main {
+    padding: 1rem .5rem; }
 
   .nav-site {
     padding: 0; }
     .nav-site .nav-triggers {
-      background: #ddeeff;
+      background: #444;
       font-weight: 700;
       line-height: 2rem;
       height: 3rem;
-      left: calc(100% - 5rem);
+      left: calc(100% - 6rem);
       position: absolute;
-      text-align: center;
       top: 0;
-      width: 5rem; }
+      width: 6rem; }
+      .nav-site .nav-triggers li a {
+        color: #fff;
+        padding-left: .87rem; }
+        .nav-site .nav-triggers li a::after {
+          content: '▾';
+          display: inline-block;
+          margin-left: .5rem; }
+        .nav-site .nav-triggers li a.open::after {
+          content: '×';
+          display: inline-block; }
     .nav-site .nav-links {
       font-size: .75rem;
       left: -99rem;
@@ -120,16 +125,16 @@ main {
       .nav-site .nav-links li {
         display: inline; }
         .nav-site .nav-links li a {
-          background: #ddeeff;
-          color: inherit;
+          background: #444;
+          color: #fff;
           display: block;
           float: left;
           padding: 0 .5rem;
           width: 50%; }
-          .nav-site .nav-links li a:before {
+          .nav-site .nav-links li a::before {
             content: '›';
             margin-right: 0.5em; }
           .nav-site .nav-links li a:hover {
-            background: #ccddee; } }
+            background: #777; } }
 
 /*# sourceMappingURL=navlight.css.map */

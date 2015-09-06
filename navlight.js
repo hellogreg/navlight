@@ -20,6 +20,7 @@
   function navlight() {
 
     var $navTriggers = document.getElementsByClassName("nav-triggers")[0];
+    var $menuTrigger = document.getElementsByClassName("menu-trigger")[0];
     var $navLinks = document.getElementsByClassName("nav-links")[0];
 
     var maxMobileWidth = 720;
@@ -30,7 +31,7 @@
         //var $target = e.target || e.srcElement;
         e.preventDefault();
         $navLinks.classList.toggle("visible");
-
+        $menuTrigger.classList.toggle("open");
       }, false);
     }
 
