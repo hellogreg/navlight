@@ -105,7 +105,7 @@ a {
       width: 6rem; }
       .nav-site .nav-triggers li a {
         color: #fff;
-        padding-left: .87rem; }
+        padding-left: .9375rem; }
         .nav-site .nav-triggers li a::after {
           content: '▾';
           display: inline-block;
