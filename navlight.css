@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -121,7 +122,7 @@ main {
           padding: 0 .5rem;
           width: 50%; }
           .nav-site .nav-links li a:before {
-            content: '\ffed';
+            content: '›';
             margin-right: 0.5em; }
           .nav-site .nav-links li a:hover {
             background: #ccddee; } }
