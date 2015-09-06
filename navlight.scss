@@ -50,18 +50,24 @@ a {
   overflow: auto;
 }
 
-.page > header, .page > footer, main, .nav-site {
+.pagehead, .pagefoot, main, .nav-site {
   background: #ffddcc;
   float: left;
   padding: 1rem;
   width: 100%;
 }
 
+main {
+  background: #ffeedd;
+}
+
+.nav-site {
+  background: #fff;
+}
 
 @media screen and (min-width: 721px) {
 
   main {
-    background: #ffeedd;
     float: right;
     padding: 0 1rem;
     width: 80%; /* For browsers that can't handle calc(). */
@@ -69,27 +75,92 @@ a {
   }
 
   .nav-site {
-    background: #ddeeff;
     clear: left;
     float: left;
     padding: 0 1rem;
     width: 80%; /* For browsers that can't handle calc(). */
     width: calc(0% + 12rem);
 
-    .nav-trigger {
+    .nav-triggers {
       display: none;
     }
+
+    .nav-links {
+      font-size: .75rem;
+      line-height: 1.5rem;
+
+      li {
+        border-bottom: 1px solid #fff;
+
+        &:last-child {
+          border-bottom-width: 0;
+        }
+
+        a {
+          background: #ddeeff;
+          color: inherit;
+          display: block;
+          padding-left: .25rem;
+
+          &:hover {
+            background: #ccddee;
+          }
+        }
+      }
+    }
+
   }
-
 }
-
 
 @media screen and (max-width: 720px) {
 
+  .pagehead {
+    height: 4rem;
+    width: calc(100% - 10rem);
+  }
+
   .nav-site {
 
+    padding: 0;
+
+    .nav-triggers {
+      background: #99ff99;
+      height: 4rem;
+      left: calc(100% - 10rem);
+      position: absolute;
+      text-align: center;
+      top: 0;
+      width: 10rem;
+    }
+
     .nav-links {
-      display: none;
+      font-size: .75rem;
+      line-height: 1.5rem;
+      width: 100%;
+      //display: none;
+
+      li {
+        display: inline;
+
+        a {
+          background: #ddeeff;
+          border-bottom: 1px solid #fff;
+          color: inherit;
+          display: block;
+          float: left;
+          padding: 0 1rem;
+          width: 50%;
+
+          &:nth-child(odd) {
+            border-right: 1px solid #fff;
+          }
+
+          &:hover {
+            background: #ccddee;
+          }
+        }
+      }
+
     }
   }
 }
