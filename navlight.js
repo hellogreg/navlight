@@ -19,8 +19,31 @@
 
   function navlight() {
 
-    log("navlight() activated!");
-    dir(navlight);
+    var $navTriggers = document.getElementsByClassName("nav-triggers")[0];
+    var $navLinks = document.getElementsByClassName("nav-links")[0];
+
+    var maxMobileWidth = 720;
+
+    function startTriggerListener() {
+      $navTriggers.addEventListener("click", function (e) {
+
+        //var $target = e.target || e.srcElement;
+        e.preventDefault();
+        $navLinks.classList.toggle("invisible");
+
+      }, false);
+    }
+
+    (function () {
+
+      if (window.innerWidth < maxMobileWidth) {
+        $navLinks.classList.add("invisible");
+        startTriggerListener();
+      }
+
+
+    }());
+
 
   }
 
