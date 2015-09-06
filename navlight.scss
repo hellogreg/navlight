@@ -143,11 +143,19 @@ main {
       width: 5rem;
     }
 
+    // Hide .nav-links with left: -99rem and position: absolute rather than display: none, so screen readers
+    // can always find the menu. Then make it appear by toggling the visible class in JavaScript.
     .nav-links {
       font-size: .75rem;
+      left: -99rem;
       line-height: 2rem;
+      position: absolute;
       width: 100%;
-      //display: none;
+
+      &.visible {
+        left: 0;
+        position: relative;
+      }
 
       li {
         display: inline;

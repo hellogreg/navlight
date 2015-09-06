@@ -110,8 +110,13 @@ main {
       width: 5rem; }
     .nav-site .nav-links {
       font-size: .75rem;
+      left: -99rem;
       line-height: 2rem;
+      position: absolute;
       width: 100%; }
+      .nav-site .nav-links.visible {
+        left: 0;
+        position: relative; }
       .nav-site .nav-links li {
         display: inline; }
         .nav-site .nav-links li a {

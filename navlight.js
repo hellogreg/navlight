@@ -29,7 +29,7 @@
 
         //var $target = e.target || e.srcElement;
         e.preventDefault();
-        $navLinks.classList.toggle("invisible");
+        $navLinks.classList.toggle("visible");
 
       }, false);
     }
@@ -39,7 +39,7 @@
     (function () {
 
       if (window.innerWidth < maxMobileWidth) {
-        $navLinks.classList.add("invisible");
+        //$navLinks.classList.add("invisible");
         startTriggerListener();
       }
 
