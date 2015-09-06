@@ -93,6 +93,8 @@ main {
     padding: 0; }
     .nav-site .nav-triggers {
       background: #99ff99;
+      font-weight: 700;
+      line-height: 2rem;
       height: 4rem;
       left: calc(100% - 5rem);
       position: absolute;
