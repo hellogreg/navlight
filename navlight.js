@@ -34,13 +34,14 @@
       }, false);
     }
 
+
+
     (function () {
 
       if (window.innerWidth < maxMobileWidth) {
         $navLinks.classList.add("invisible");
         startTriggerListener();
       }
-
 
     }());
 
